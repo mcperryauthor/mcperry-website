@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | M.C. Perry</title>
+    <meta name="description" content="Author updates, writing journey, and exclusive content from M.C. Perry.">
+    <!-- Replace: Add your actual favicon below -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>M</text></svg>">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .blog-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-preview {
+            background: var(--bg-panel);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: var(--border-radius-md);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            transition: transform var(--transition-smooth), border-color var(--transition-fast);
+        }
+        .article-preview:hover {
+            border-color: rgba(212, 175, 55, 0.2);
+            transform: translateY(-2px);
+        }
+        .article-date {
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .article-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .article-title a {
+            color: var(--text-primary);
+        }
+        .article-title a:hover {
+            color: var(--accent-gold);
+        }
+        .article-excerpt {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        .read-more {
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+        .read-more::after {
+            content: '→';
+            margin-left: 0.5rem;
+            transition: transform var(--transition-fast);
+        }
+        .read-more:hover::after {
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">M.C. PERRY</a>
+            </div>
+            <button class="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+                &#9776;
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="divine-academy.html">Divine Academy</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="blog.html" class="active">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Minimal Hero -->
+    <section class="hero-minimal" style="background: linear-gradient(to bottom, var(--bg-midnight), var(--bg-dark));">
+        <div class="container hero-content" style="margin: 0 auto;">
+            <h1 style="font-size: 4rem;">The Grimoire</h1>
+            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
+                Notes on writing, worldbuilding, and the trials of the author life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Listing Section -->
+    <section class="section-padding">
+        <div class="container blog-list">
+            
+            <!-- Article 1 -->
+            <article class="article-preview">
+                <span class="article-date">October 15, 2024</span>
+                <h2 class="article-title"><a href="#">Cover Reveal: Divine Ritual</a></h2>
+                <p class="article-excerpt">
+                    The wait is finally over. I am beyond thrilled to share the cover for the epic conclusion to the Divine Academy series. This cover perfectly captures the dark, ominous tension of the final book, and I can't wait for you all to hold it in your hands...
+                </p>
+                <a href="#" class="read-more">Read Full Post</a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="article-preview">
+                <span class="article-date">September 02, 2024</span>
+                <h2 class="article-title"><a href="#">Crafting Morally Grey Characters</a></h2>
+                <p class="article-excerpt">
+                    One of the most common questions I get asked is how I balance writing villains that you can't help but fall in love with. In this post, I dive into the psychology of the anti-hero, and why the lines between good and evil make the best romances...
+                </p>
+                <a href="#" class="read-more">Read Full Post</a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="article-preview">
+                <span class="article-date">August 10, 2024</span>
+                <h2 class="article-title"><a href="#">Update: Standalone Project Teaser</a></h2>
+                <p class="article-excerpt">
+                    While I'm wrapping up edits on the Divine Academy series, I've started sketching out the world for my next dark fantasy romance. Think high court intrigue, assassination plots in the dead of night, and a very grumpy prince...
+                </p>
+                <a href="#" class="read-more">Read Full Post</a>
+            </article>
+            
+            <div class="text-center" style="margin-top: 4rem;">
+                <p style="color: var(--text-muted);">More posts coming soon.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h3 style="font-family: var(--font-heading); color: var(--accent-gold); margin-bottom: 1rem;">M.C. PERRY</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; <script>document.write(new Date().getFullYear())</script> M.C. Perry. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
