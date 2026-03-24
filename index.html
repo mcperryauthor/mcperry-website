@@ -22,6 +22,12 @@
 
     <!-- Header Navigation -->
     <header>
+        <div class="announcement-bar">
+            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer">
+                <span class="pulse-dot"></span>
+                <strong>LIVE ON KICKSTARTER:</strong> Divine Spark Luxe Edition — Back the exclusive hardcover now!
+            </a>
+        </div>
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">M.C. PERRY</a>
@@ -43,16 +49,34 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container hero-content">
-            <span class="tagline">Dark Romance & Fantasy Romance</span>
-            <!-- Replace: Main headline text to preference -->
-            <h1 style="margin-bottom: 1.5rem;">Enter Worlds of Dark Magic & Dangerous Love</h1>
-            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px;">
-                Welcome to the official home of M.C. Perry. Surrender to breathless romance, forbidden magic, and morally grey characters that will steal your heart.
-            </p>
-            <div class="btn-group" style="display: flex; gap: 1rem;">
-                <a href="divine-academy.html" class="btn btn-primary">Explore Divine Academy</a>
-                <a href="books.html" class="btn btn-outline">View All Books</a>
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-eyebrow">Dark Fantasy Romance & Dark Romance</span>
+                <h1 class="hero-headline">Forbidden magic.<br>Ruthless devotion.<br>Love that leaves scars.</h1>
+                <p class="hero-subheadline">Inside these pages, desire is dangerous, power has a cost, and love is never simple.</p>
+                <div class="hero-buttons">
+                    <a href="divine-academy.html" class="btn btn-primary">Start Divine Academy</a>
+                    <a href="books.html" class="btn btn-outline">Browse Books</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="book-stack">
+                    <img src="assets/images/Divine%20Ritual%20Cover.jpeg" alt="Divine Ritual" class="book-stack-img img-back">
+                    <img src="assets/images/Divine%20Glory%20Cover.jpeg" alt="Divine Glory" class="book-stack-img img-middle">
+                    <img src="assets/images/Divine%20Spark%20Cover.jpeg" alt="Divine Spark" class="book-stack-img img-front">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kickstarter Banner Section -->
+    <section style="padding: 4rem 0; background-color: var(--bg-dark); border-bottom: 1px solid rgba(212, 175, 55, 0.1);">
+        <div class="container text-center">
+            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer" style="display: block; overflow: hidden; border-radius: var(--border-radius-md); box-shadow: var(--shadow-elegant); border: 1px solid rgba(212, 175, 55, 0.3); max-width: 1000px; margin: 0 auto; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(5, 206, 120, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-elegant)';">
+                <img src="assets/images/Divine%202.png" alt="Divine Spark Kickstarter Live Now" style="width: 100%; display: block;">
+            </a>
+            <div style="margin-top: 2rem;">
+                <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer" class="btn btn-kickstarter" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; letter-spacing: 2px;">BACK THE LUXE EDITION NOW</a>
             </div>
         </div>
     </section>
@@ -69,17 +93,17 @@
                     <span class="text-accent" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Featured Series</span>
                     <h2 style="margin-top: 0.5rem;">The Divine Academy Series</h2>
                     <p class="author-bio-snippet">
-                        A world where gods walk among mortals, and survival means making deals with the darkest of deities. 
+                        Power awakens. Bonds snap into place. And survival was never meant to feel this dangerous.
                     </p>
                     <p style="color: var(--text-muted); margin-bottom: 2rem;">
-                        Follow the journey of power, betrayal, and undeniable attraction in this bestselling dark fantasy romance series. Will she conquer the academy, or will the academy consume her?
+                        At Divine Academy, forbidden magic, ruthless politics, and irresistible attraction collide in a world where choosing the wrong person could cost everything.
                     </p>
                     <ul style="list-style: none; margin-bottom: 2rem; color: var(--text-muted);">
-                        <li style="margin-bottom: 0.5rem;">✓ Enemies to Lovers</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Morally Grey Heroes</li>
-                        <li style="margin-bottom: 0.5rem;">✓ Magic Academy Setting</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Enemies who should never want each other</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Morally grey men who don’t play fair</li>
+                        <li style="margin-bottom: 0.5rem;">✓ A deadly academy built on power and control</li>
                     </ul>
-                    <a href="divine-academy.html" class="btn btn-outline">Start Reading</a>
+                    <a href="divine-academy.html" class="btn btn-outline">Enter Divine Academy</a>
                 </div>
             </div>
         </div>
@@ -99,9 +123,13 @@
                     <div class="card-content">
                         <div class="card-meta">Divine Academy • Book 1</div>
                         <h3 class="card-title">Divine Spark</h3>
-                        <p class="card-excerpt">The spark that ignited a war among the gods. When her powers awaken, the entire academy turns against her.</p>
+                        <p class="card-excerpt">One mistake awakens a power that was never meant to exist—and binds her to men who refuse to let her go.</p>
                         <!-- Replace: Add actual buy link -->
-                        <a href="books.html" class="btn btn-primary" style="width: 100%; text-align: center;">Buy Now</a>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" class="btn btn-kickstarter" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center;">KS Special Edition</a>
+                            <a href="https://a.co/d/01aBtii5" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center;">Available on Amazon</a>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover • Audio</div>
                     </div>
                 </article>
                 
@@ -112,9 +140,10 @@
                     <div class="card-content">
                         <div class="card-meta">Divine Academy • Book 2</div>
                         <h3 class="card-title">Divine Glory</h3>
-                        <p class="card-excerpt">To claim glory, one must sacrifice everything. The thrilling continuation of the Divine Academy saga.</p>
+                        <p class="card-excerpt">Power comes at a cost—and the deeper she falls into the academy, the harder it becomes to tell who she should trust… or who she wants.</p>
                         <!-- Replace: Add actual buy link -->
-                        <a href="books.html" class="btn btn-primary" style="width: 100%; text-align: center;">Buy Now</a>
+                        <a href="https://a.co/d/02Ftcx9a" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center;">Available on Amazon</a>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover • Audio</div>
                     </div>
                 </article>
 
@@ -125,8 +154,9 @@
                     <div class="card-content">
                         <div class="card-meta">Standalone Shifter Romance</div>
                         <h3 class="card-title">His Unexpected Luna</h3>
-                        <p class="card-excerpt">A gripping standalone shifter romance full of undeniable fated mates, dangerous packs, and unexpected twists.</p>
-                        <a href="books.html" class="btn btn-outline" style="width: 100%; text-align: center;">Learn More</a>
+                        <p class="card-excerpt">One night changes everything—and the man she never expected might be the one she can’t escape.</p>
+                        <a href="https://a.co/d/0ehLkVuS" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width: 100%; text-align: center;">Available on Amazon</a>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover</div>
                     </div>
                 </article>
             </div>
@@ -144,8 +174,11 @@
                 <img src="assets/images/Author%20Photo.jpeg" alt="M.C. Perry">
             </div>
             <h2>Meet M.C. Perry</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">
+                M.C. Perry writes dark romance and fantasy romance for readers who crave obsession, power, and love that borders on dangerous.
+            </p>
             <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
-                M.C. Perry writes dark fantasy and romance novels for readers who love villains as much as heroes. When not writing about morally grey characters and forbidden magic, she can be found lost in a good book with a decidedly oversized mug of tea.
+                Her stories are filled with possessive heroes, forbidden magic, and relationships that refuse to stay simple. If you like tension, morally grey characters, and bonds that feel inevitable—you’re in the right place.
             </p>
             <a href="contact.html" class="btn btn-outline">Get in Touch</a>
         </div>

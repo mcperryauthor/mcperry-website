@@ -14,6 +14,12 @@
 
     <!-- Header Navigation -->
     <header>
+        <div class="announcement-bar">
+            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer">
+                <span class="pulse-dot"></span>
+                <strong>LIVE ON KICKSTARTER:</strong> Divine Spark Luxe Edition — Back the exclusive hardcover now!
+            </a>
+        </div>
         <div class="container nav-container">
             <div class="logo">
                 <a href="index.html">M.C. PERRY</a>
@@ -34,11 +40,11 @@
     </header>
 
     <!-- Minimal Hero -->
-    <section class="hero-minimal">
+    <section class="hero-minimal" style="min-height: 35vh; padding-top: calc(var(--header-height) + 3rem); padding-bottom: 3rem;">
         <div class="container hero-content" style="margin: 0 auto;">
-            <h1 style="font-size: 4rem;">The Written Worlds</h1>
-            <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto;">
-                Explore the complete collection of dark romance and fantasy series by M.C. Perry.
+            <h1 style="font-size: 3.5rem; line-height: 1.15; margin-bottom: 1rem;">Obsession. Power.<br>Love that refuses to stay simple.</h1>
+            <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 750px; margin: 0 auto; line-height: 1.6;">
+                Step into stories filled with forbidden magic, possessive heroes, and relationships that blur the line between desire and destruction.
             </p>
         </div>
     </section>
@@ -61,7 +67,11 @@
                         <div class="card-meta">Book 1</div>
                         <h3 class="card-title">Divine Spark</h3>
                         <p class="card-excerpt">"A lethal game of divine powers where the only way to win is to lose your heart."</p>
-                        <a href="#" class="btn btn-primary" style="width:100%; text-align:center;">Buy Now</a>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" class="btn btn-kickstarter" target="_blank" rel="noopener noreferrer" style="width:100%; text-align:center;">KS Special Edition</a>
+                            <a href="https://a.co/d/01aBtii5" class="btn btn-outline" target="_blank" rel="noopener noreferrer" style="width:100%; text-align:center;">Get on Amazon</a>
+                        </div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover • Audio</div>
                     </div>
                 </article>
 
@@ -71,7 +81,8 @@
                         <div class="card-meta">Book 2</div>
                         <h3 class="card-title">Divine Glory</h3>
                         <p class="card-excerpt">"Survive the immortal court, but do not succumb to the darkness within."</p>
-                        <a href="#" class="btn btn-primary" style="width:100%; text-align:center;">Buy Now</a>
+                        <a href="https://a.co/d/02Ftcx9a" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%; text-align:center;">Get on Amazon</a>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover • Audio</div>
                     </div>
                 </article>
 
@@ -81,7 +92,8 @@
                         <div class="card-meta">Book 3</div>
                         <h3 class="card-title">Divine Ritual</h3>
                         <p class="card-excerpt">"The final battle. Gods versus mortals. An epic, heartbreaking conclusion."</p>
-                        <a href="#" class="btn btn-primary" style="width:100%; text-align:center;">Buy Now</a>
+                        <a href="https://a.co/d/091DyjBb" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="width:100%; text-align:center;">Get on Amazon</a>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 0.8rem;">Ebook • Paperback • Hardcover • Audio</div>
                     </div>
                 </article>
             </div>
@@ -95,29 +107,33 @@
                 <h2>Standalones & Novellas</h2>
             </div>
             
-            <div class="grid-3" style="justify-content: center;">
-                <article class="card">
-                    <img src="assets/images/His%20Unexpected%20Luna%20coverJPEG.JPEG" alt="His Unexpected Luna" class="book-cover">
-                    <div class="card-content">
-                        <div class="card-meta">Standalone Shifter Romance</div>
-                        <h3 class="card-title">His Unexpected Luna</h3>
-                        <p class="card-excerpt">A gripping standalone shifter romance full of undeniable fated mates, dangerous packs, and unexpected twists.</p>
-                        <a href="#" class="btn btn-primary" style="width:100%; text-align:center;">Buy Now</a>
-                    </div>
-                </article>
-                
-                <!-- Placeholder for future books -->
-                <article class="card" style="border: 1px dashed rgba(212,175,55,0.3); background: transparent;">
-                    <div style="width: 100%; aspect-ratio: 2/3; display: flex; align-items: center; justify-content: center; color: var(--text-muted); border-bottom: 2px solid rgba(212,175,55,0.3);">
-                        <em>Cover Coming Soon</em>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-meta">Untitled Dark Romance</div>
-                        <h3 class="card-title">Project Midnight</h3>
-                        <p class="card-excerpt">Currently writing... Sign up for the newsletter to be the first to know about new universe reveals!</p>
-                        <!-- Notice there are no buttons here, just text -->
-                    </div>
-                </article>
+            <!-- Featured Standalone -->
+            <div class="grid-2" style="background: var(--bg-panel); border-radius: var(--border-radius-md); border: 1px solid rgba(255, 255, 255, 0.05); overflow: hidden; margin-bottom: 4rem; box-shadow: var(--shadow-elegant);">
+                <div style="height: 100%;">
+                    <img src="assets/images/His%20Unexpected%20Luna%20coverJPEG.JPEG" alt="His Unexpected Luna" style="width: 100%; height: 100%; min-height: 400px; object-fit: cover; border-right: 2px solid rgba(212,175,55,0.3);">
+                </div>
+                <div style="padding: 3rem;">
+                    <div class="card-meta">Standalone Shifter Romance</div>
+                    <h3 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary); font-family: var(--font-heading);">His Unexpected Luna</h3>
+                    <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem; line-height: 1.6;">
+                        One night changes everything—and the man she never expected might be the one she can’t escape.
+                    </p>
+                    <ul style="list-style: none; margin-bottom: 2.5rem; color: var(--text-muted);">
+                        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-gold); margin-right: 0.5rem;">✦</span> Fated mates</li>
+                        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-gold); margin-right: 0.5rem;">✦</span> Protective alpha</li>
+                        <li style="margin-bottom: 0.5rem;"><span style="color: var(--accent-gold); margin-right: 0.5rem;">✦</span> Unexpected bond</li>
+                    </ul>
+                    <a href="https://a.co/d/0ehLkVuS" class="btn btn-primary" target="_blank" rel="noopener noreferrer" style="display: inline-block;">Read Now on Amazon</a>
+                    <div style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.8rem;">Ebook • Paperback • Hardcover</div>
+                </div>
+            </div>
+
+            <!-- Coming Soon Teaser -->
+            <div class="text-center" style="max-width: 600px; margin: 0 auto; padding: 3rem; background: transparent; border: 1px dashed rgba(212,175,55,0.3); border-radius: var(--border-radius-md);">
+                <h3 style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 1rem; font-family: var(--font-heading);">Coming Soon</h3>
+                <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.6;">
+                    A new story is on the way… dark romance, dangerous attraction, and no easy escape.
+                </p>
             </div>
         </div>
     </section>
