@@ -7,20 +7,20 @@
 
 /* --- CSS Variables / Theming --- */
 :root {
-  /* Colors */
-  --bg-dark: #0f1014;
-  --bg-deep-plum: #2D1B2E;
-  --bg-burgundy: #4A0E17;
-  --bg-midnight: #0A1128;
-  --bg-charcoal: #1A1A1A;
-  --bg-panel: rgba(25, 25, 30, 0.85);
+  /* Colors - Custom Palette Matched to Author Photo */
+  --bg-dark: #1A151D;       /* Warm plum-black */
+  --bg-deep-plum: #4E3559;  /* Hoodie purple */
+  --bg-burgundy: #9C4F69;   /* Banner mauve/rose */
+  --bg-midnight: #160f18;   /* Deepest ambient dark */
+  --bg-charcoal: #2A202D;   /* Dark warm grey-purple */
+  --bg-panel: rgba(42, 32, 45, 0.85); /* For cards */
 
-  --text-primary: #FFFFF0; /* Soft ivory */
-  --text-muted: #BDBDBD;
+  --text-primary: #f8f1f4;  /* Soft pinkish-ivory */
+  --text-muted: #d9c4d2;    /* Dusty lilac */
   
-  --accent-gold: #D4AF37; /* Muted gold */
-  --accent-gold-hover: #F1CA58;
-  --accent-silver: #C0C0C0;
+  --accent-gold: #F4A259;   /* Warm peachy-gold from banner text */
+  --accent-gold-hover: #ffbb77;
+  --accent-silver: #E0E0E0;
 
   /* Typography */
   --font-heading: 'Cinzel', serif;
