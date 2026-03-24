@@ -116,14 +116,29 @@
     <!-- Kickstarter Banner Section -->
     <section style="padding: 4rem 0; background-color: var(--bg-deep-plum); border-bottom: 1px solid rgba(194, 89, 121, 0.1);">
         <div class="container text-center">
-            <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer" style="display: block; overflow: hidden; border-radius: var(--border-radius-md); box-shadow: var(--shadow-elegant); border: 1px solid rgba(194, 89, 121, 0.3); max-width: 1000px; margin: 0 auto; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(5, 206, 120, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-elegant)';">
+            <a href="#" id="openVideoBtn" style="display: block; overflow: hidden; border-radius: var(--border-radius-md); box-shadow: var(--shadow-elegant); border: 1px solid rgba(194, 89, 121, 0.3); max-width: 1000px; margin: 0 auto; transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(194, 89, 121, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-elegant)';">
                 <img src="assets/images/Divine%202.png" alt="Divine Spark Kickstarter Live Now" style="width: 100%; display: block;">
+                <!-- Floating Play Icon -->
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.65); width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid var(--text-primary); cursor: pointer; backdrop-filter: blur(4px);">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--text-primary)"><path d="M8 5v14l11-7z"/></svg>
+                </div>
             </a>
-            <div style="margin-top: 2rem;">
-                <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer" class="btn btn-kickstarter" style="font-size: 1.1rem; padding: 1.2rem 2.5rem; letter-spacing: 2px;">BACK THE LUXE EDITION NOW</a>
+            <div style="margin-top: 2.5rem;">
+                <a href="https://www.kickstarter.com/projects/mcperry/divine-spark-a-why-choose-academy-romantasy-special-edition" target="_blank" rel="noopener noreferrer" class="btn btn-kickstarter" style="font-size: 1.2rem; padding: 1.2rem 3rem; letter-spacing: 2px;">BACK THE LUXE EDITION NOW</a>
             </div>
         </div>
     </section>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="close-modal">&times;</span>
+            <video id="kickstarterVideo" controls>
+                <source src="assets/videos/kickstarter-trailer.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
 
     <!-- Author Bio Preview Section -->
     <section class="section-padding" style="background-color: var(--bg-charcoal);">
@@ -194,5 +209,33 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById("videoModal");
+            const btn = document.getElementById("openVideoBtn");
+            const closeSpan = document.querySelector(".close-modal");
+            const video = document.getElementById("kickstarterVideo");
+
+            if(btn && modal && video) {
+                btn.onclick = function(e) {
+                    e.preventDefault();
+                    modal.classList.add("active");
+                    video.play();
+                }
+            }
+            if(closeSpan) {
+                closeSpan.onclick = function() {
+                    modal.classList.remove("active");
+                    video.pause();
+                }
+            }
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.classList.remove("active");
+                    video.pause();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
