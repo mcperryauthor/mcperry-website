@@ -566,6 +566,36 @@ footer {
   font-size: 0.9rem;
 }
 
+/* --- Series Hero Typography --- */
+.series-hero-h1 {
+  font-size: 3.8rem;
+  color: var(--text-primary);
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.series-hero-h2 {
+  font-size: 1.7rem;
+  color: #c25979;
+  font-family: var(--font-heading);
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.5;
+  max-width: 1100px;
+  font-weight: normal;
+}
+
+.series-hero-tagline {
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
 /* --- Responsive Layout --- */
 @media (max-width: 900px) {
   h1, .hero-headline { font-size: 2.5rem; }
@@ -627,6 +657,18 @@ footer {
 
   .hero-content {
     text-align: center;
+  }
+
+  .series-hero-h1 {
+    font-size: 2.2rem;
+  }
+  
+  .series-hero-h2 {
+    font-size: 1.2rem;
+  }
+  
+  .series-hero-tagline {
+    font-size: 0.85rem;
   }
 
   .btn-group, .hero-buttons {
